@@ -1,5 +1,6 @@
+<h1>politique cookies</h1> 
+
 <?php get_header(); ?>
-<h1>politique cookies</h1>
 
 <section class="cookies">
     <div class="cookies-article">

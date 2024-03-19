@@ -1,15 +1,16 @@
-<h1>Page formations</h1>
+
+<h1>Page parcours-pro</h1>
 
 <?php get_header(); ?>
 
 
-<section class="formations">
+<section class="parcours-pro">
     <div class="petit-article">
 
         <?php
         $args = array(
             'post_type' => 'post',
-            'category_name' => 'formations',
+            'category_name' => 'parcours-professionnel',
             'posts_per_page' => -1, // Pour afficher tous les articles de la catégorie
         );
 
@@ -30,4 +31,3 @@
 </section>
 
     <?php get_footer(); ?>
-    

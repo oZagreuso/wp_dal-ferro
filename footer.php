@@ -1,5 +1,5 @@
 <footer id="footer" class=".generic-footer">
-    <div class="container">
+    <div class="row-container">
         
         <div class="row">
 
@@ -11,10 +11,6 @@
                 <p>&copy; <?php echo date("Y"); ?> DAL FERRO</p>
             </div>
           
-        </div>
-
-  
-
-
+        </div> 
     </div>
 </footer>
