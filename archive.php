@@ -1,5 +1,7 @@
-<?php get_header(); ?>
 <h1>Archive</h1>
+
+<?php get_header(); ?>
+
 <section class="blog-container">
 	<?php if( have_posts() ) : while( have_posts() ) : the_post(); ?>
   
@@ -21,14 +23,12 @@
                 par <?php the_author(); ?> • <?php comments_number(); ?>
             </p>
             
-      		<?php the_excerpt(); ?>
-              
-
-			
+      		<?php the_excerpt(); ?>       
 
       		<p>
                 <a href="<?php the_permalink(); ?>" class="post__content">Lire la suite</a>
             </p> 
+
 		</article>
 
 	<?php endwhile; endif; ?>

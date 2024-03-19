@@ -1,6 +1,8 @@
+<h1>Page Real Contact</h1>
+
 
 <?php get_header(); ?>
-<h1>Page Real Contact</h1>
+
 <section class="contact">
     <div class="contact-article">
                 <?php if( have_posts() ) : while( have_posts() ) : the_post(); ?>            

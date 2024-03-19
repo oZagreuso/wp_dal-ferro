@@ -5,8 +5,8 @@
 
 
 <section class="parcours-pro">
-    <div class="petit-article">
-
+<article class="petit-article">
+<h1><?php the_title(); ?></h1>
         <?php
         $args = array(
             'post_type' => 'post',
@@ -14,20 +14,20 @@
             'posts_per_page' => -1, // Pour afficher tous les articles de la catégorie
         );
 
-        $query = new WP_Query( $args );
-
+        $query = new WP_Query( $args );  
         if ( $query->have_posts() ) :
             while ( $query->have_posts() ) : $query->the_post();
         ?>           
+ <?php /*the_post_thumbnail('custom-size');*/?>
+                
+ 
 
-                <h1><?php the_title(); ?></h1>
-
-                <?php the_post_thumbnail('custom-size');?>
+               
                 
                 <?php the_content(); ?>                
 
                 <?php endwhile; endif; ?>
-    </div>
+</article>
 </section>
 
     <?php get_footer(); ?>

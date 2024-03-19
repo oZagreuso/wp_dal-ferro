@@ -34,7 +34,7 @@ function complianz_banner_in_header() {
 
 // Redimensionner automatiquement les images dans les articles
 function custom_content_image_sizes($sizes) {
-    $sizes = array(
+    $sizes = array(        
         'thumbnail' => __( 'Thumbnail' ),
         'medium'    => __( 'Medium' ),
         'large'     => __( 'Large' ),
@@ -45,6 +45,6 @@ function custom_content_image_sizes($sizes) {
 add_filter('image_size_names_choose', 'custom_content_image_sizes');
 
 // Ajoutez une nouvelle taille d'image personnalisée
-add_image_size('custom-size', 300, 600, true);
+add_image_size('custom-size', 286, 228, true);
 
 
