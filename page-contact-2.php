@@ -1,4 +1,4 @@
-<h1>Page Real Contact</h1>
+
 
 
 <?php get_header(); ?>
@@ -14,5 +14,7 @@
                 <?php endwhile; endif; ?>
     </div>
 </section>
-
+<h1>Page Real Contact</h1>
     <?php get_footer(); ?>
+
+ 

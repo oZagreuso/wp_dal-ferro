@@ -1,7 +1,5 @@
-<h1>Archive</h1>
-
 <?php get_header(); ?>
-
+<h1>Archive</h1>
 <section class="blog-container">
 	<?php if( have_posts() ) : while( have_posts() ) : the_post(); ?>
   
