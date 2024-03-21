@@ -80,8 +80,7 @@ footer {
     margin-left: 8vw; 
     margin-top: 4vw;     
     position: absolute; 
-    z-index: 100;
-    
+    z-index: 100;    
     /*overflow: scroll;*/
 }
 
@@ -135,7 +134,7 @@ footer {
 
 .front {
     /* background-color: var(--color-theme-secondary); */
-    /* background-image: url("./img/font-frontpage.png"); */
+    /* background-image: url("font-frontpage.png");  */
     /* display: flex;
     justify-content: center; */
     display: grid;
@@ -144,13 +143,15 @@ footer {
     grid-column-gap: 0px;
     grid-row-gap: 0px;
     position: relative;
-    width: 100vw;
+    width: 100%;
     margin-right: 0px;
     padding-right: 0px;
+    
 }
 
 .front img {
     width: 100vw;
+    overflow: scroll;
 }
 
 .front-x { 
@@ -220,7 +221,10 @@ p {
     border-radius: 50px;  
 } */
 
-.formations-article {
+/* --- --- CSS FORMATION & PARCOURS PROFESSIONNEL --- ---*/
+
+
+/* .formations-article {
     background-color: var(--color-article-background);
     color: var(--color-theme-primary);
     box-sizing: border-box;
@@ -230,15 +234,149 @@ p {
     width: 30vw; 
     margin-left: 15px; 
     margin-top: 15px;
-    border-radius: 50px;  
-    /*overflow: scroll;*/
+    border-radius: 50px; 
+} */
+/* 
+.resume {
+     background-color: var(--color-theme-secondary);
+    background-image: url("./img/font-frontpage.png");
+    display: flex;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    position: relative;
+    width: 100vw;
+    margin-right: 0px;
+    padding-right: 0px;
+} */
+
+.resume {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    background-image: url("font-frontpage.png");
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%; 
+    padding-bottom: 40px;
+    /* border: 1px solid red; */
 }
 
-.formations-article h1 {
+.resume-article {   
+    background-color: #DCDCDC;  
+    color: var(--color-theme-primary);
+    box-sizing: border-box;
+    border-radius: 20px;  
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    margin-left: 8vw; 
+    margin-top: 40px;      
+}
+
+
+.resume-article:nth-child(odd) {
+    grid-area: 1 / 1 / 2 / 2; 
+    /* grid-column: 1 / span 2; 
+    grid-row: 1 / 2;  */
+    width: 30vw; 
+    
+}
+
+.resume-article:nth-child(even) {
+    margin-right: 20px;
+    grid-area: 1 / 2 / 2 / 3;
+    /* grid-column: 2 / span 2; 
+    grid-row: 1 / 2;   */
+    width: 30vw; 
+     
+}
+
+/* .resume-article:nth-child(1) {
+    grid-column: 1 / span 2; 
+    grid-row: 1 / 2; 
+}
+
+.resume-article:nth-child(2) {
+    grid-column: 3 / span 2; 
+    grid-row: 1 / 2; 
+} */
+
+
+/* .resume-x { 
+    grid-area: 1 / 1 / 4 / 4;
+}
+
+.resume-y { 
+    grid-area: 1 / 1 / 3 / 3;; 
+} */
+
+.resume img {
+    height: 270px; 
+    border-bottom-left-radius: 10px;
+}
+
+.resume-a { 
+    grid-area: 1 / 1 / 2 / 4;
+    /* background: linear-gradient(#2BA1C4, #4F438C); */
+    background: linear-gradient(#4F438C, #2BA1C4);
+    /* , #A23B82 */
+    border-top-right-radius: 10px;  
+    border-top-left-radius: 10px;
+}
+
+.resume-b { 
+    grid-area: 2 / 2 / 5 / 3;
+    background: linear-gradient(#D3D3D3, #C0C0C0, #A9A9A9, #808080);
+    border-bottom-right-radius: 10px;
+}
+
+.resume-d { 
+    grid-area:  2 / 1 / 4 / 2;
+    background: linear-gradient(#D3D3D3, #C0C0C0, #A9A9A9, #808080);   
+    border-bottom-left-radius: 10px;
+}
+
+.resume-a p {
+    font-size: small;    
+    margin-left: 30px;
+    margin-right: 30px;
+    border-bottom: 1px solid;
+}
+
+.resume-article h1 {
     padding-left: 10px;
     padding-top: 3px;
     color: var(--color-article-title);
-    /*text-shadow: #222833 3px 2px 7px;*/
+    text-shadow: #222833 3px 2px 7px;
+    -webkit-text-stroke: #4F438C;
+    font-weight: normal;
+    font-size: xx-large;
+    font-family: fantasy;
+    margin-left: 30px;
+    margin-top: 30px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+
+.resume-article p {
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+/* --- --- --- --- */
+
+/* .formations-article h1 {
+    padding-left: 10px;
+    padding-top: 3px;
+    color: var(--color-article-title);
     font-weight: bolder;
 }
 
@@ -257,7 +395,7 @@ p {
 .formations-article img {
    padding-left: 20px;
    padding-right: 20px;
-}
+} */
 
 /* .contact-article {
 
@@ -281,8 +419,11 @@ p {
 
 .contact {
     /* background-color: var(--color-theme-secondary); */
-    background-image: linear-gradient(#4F438C, #2BA1C4);
-    padding-top: 30px;
+    background-image: url('font-frontpage.png');
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    padding-top: 40px;
     padding-bottom: 30px;
     display: flex;
     justify-content: center;

@@ -32,19 +32,22 @@ function complianz_banner_in_header() {
 <?php
 }
 
+add_theme_support( 'post-thumbnails' );
+
+set_post_thumbnail_size( 232, 250, true );
+
 // Redimensionner automatiquement les images dans les articles
-function custom_content_image_sizes($sizes) {
-    $sizes = array(        
-        'thumbnail' => __( 'Thumbnail' ),
-        'medium'    => __( 'Medium' ),
-        'large'     => __( 'Large' ),
-        'custom-size' => __( 'Custom Size' ), // Ajoutez une taille personnalisée
-    );
-    return $sizes;
-}
-add_filter('image_size_names_choose', 'custom_content_image_sizes');
+// function custom_content_image_sizes($sizes) {
+//     $sizes = array(        
+//         'thumbnail' => __( 'Thumbnail' ),
+//         'medium'    => __( 'Medium' ),
+//         'large'     => __( 'Large' ),
+//         'custom-size' => __( 'Custom Size' ), // Ajoutez une taille personnalisée
+//     );
+//     return $sizes;
+// }
+// add_filter('image_size_names_choose', 'custom_content_image_sizes');
 
 // Ajoutez une nouvelle taille d'image personnalisée
-add_image_size('custom-size', 286, 228, true);
-
+// add_image_size('custom-size', 232, 250, true);
 
