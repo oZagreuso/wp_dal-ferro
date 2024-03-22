@@ -32,13 +32,9 @@
         </div>  
        
     </div>
-    <div class="front-y">
-            <a>
-        <img src="<?php echo get_template_directory_uri(); ?>/img/font-frontpage.png" alt="logo-background">
-            </a>
-        </div>
+   
         
-<h1>frontpage</h1>
-</section>
 
+</section>
+<h3>frontpage</h3>
 <?php get_footer(); ?>
