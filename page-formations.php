@@ -1,4 +1,4 @@
-<h1>Page formations</h1>
+
 
 <?php get_header(); ?>
 
@@ -43,7 +43,7 @@
 
         <?php endwhile; endif; ?>
               
-  
+        <h1>Page formations</h1>
 </section>
 
     <?php get_footer(); ?>
