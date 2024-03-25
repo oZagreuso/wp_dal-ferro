@@ -66,12 +66,13 @@ footer {
 } 
 
 .menu-header {
-    background-color: var( --color-theme-menu);
+    background-color: var( black);
     padding: 0.5px 0px;
 }
 
 .front-article {
     /* background-color: var(--color-article-background); */
+    grid-area: 1 / 1 / 2 / 2;
     background-color: #DCDCDC;
     /* background-color: (#DCDCDC, #4CA2C2); */
     /* background: linear-gradient(#2BA1C4, #4F438C, #B72E79); */
@@ -87,10 +88,35 @@ footer {
     justify-content: center; */
     width: 30vw; 
     margin-left: 8vw; 
-    margin-top: 2vw;     
+    margin-top: 40px;     
     /* position: absolute; 
     z-index: 100;     */
     /*overflow: scroll;*/
+}
+
+.extra-header {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.recherche {
+    grid-area: 1 / 2 / 2 / 3;
+    text-align: center;
+    padding-top: 30px; 
+    padding-bottom: 30px;
+}
+
+.email-letter {
+    border-radius: 3px;
+    border: none;
+}
+
+.subscribe-letter {
+    border-radius: 3px;
+    border: none;
 }
 
 .front-a { 
@@ -141,20 +167,16 @@ footer {
     padding-right: 8px;
 }
 
-.front {
-    /* background-color: var(--color-theme-secondary); */
+.front {   
+    
     background-image: url("font-frontpage.png"); 
-    /* display: flex;
-    justify-content: center; */
     /* display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
-    position: relative;
-    width: 100%; */
     margin-right: 0px;
-    padding-right: 0px;
+    padding-right: 0px; */
     padding-top: 20px;
     padding-bottom: 110px;
     
@@ -207,17 +229,16 @@ footer {
 .row {
     margin: 25px 0px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content:space-between;
     background-color: var(--color-theme-primary);
 }
 
-/* .copyright {
-    display: flex;
-    justify-content: end;
+.copyright {
+
     font-size: smaller;
     margin-right: 35px;
-    margin-top: 70px;
-} */
+    padding-top: 50px;   
+} 
 
 /* #wpforms-126 {
     background-color: var(--color-article-background);
@@ -839,4 +860,24 @@ footer {
     font-weight: bolder;
 }
 
+/* MOTEUR RECHERCHE */
+
+#sidebar {
+    background-image: url('font-frontpage.png');
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    padding-top: 40px;
+    padding-bottom: 30px;
+   
+}
+
+#sidebar ul li a {
+    text-decoration: none;
+    text-decoration-style: none;
+}
+
+.pagenav li {
+    text-decoration: none;
+}
 

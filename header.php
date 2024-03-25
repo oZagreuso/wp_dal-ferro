@@ -20,10 +20,9 @@
                         else:
                             echo "Bonjour, visiteur !";
                         endif; ?>
+
         </div>
-        <div class="recherche">
-                <?php get_search_form(); ?>
-        </div>
+    
 </section>
 
     <header class="header-perso">
@@ -35,11 +34,26 @@
         </div>
        
 
-    </header>  
+    </header> 
     
+    <div class="extra-header">
+
+<div class="recherche">
+        <?php get_search_form(); ?>
+</div>
+
+</div>
+
 <div class="menu-header">
+<?php get_template_part( 'custom-search' ); ?>
              <?php wp_nav_menu( array( 'theme_location' => 'main' ) ); ?> 
-</div>  
+</div> 
+
+
+
+
+    
+ 
 
 <?php wp_body_open(); ?>
 

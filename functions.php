@@ -49,5 +49,6 @@ set_post_thumbnail_size( 232, 250, true );
 // add_filter('image_size_names_choose', 'custom_content_image_sizes');
 
 // Ajoutez une nouvelle taille d'image personnalisée
-// add_image_size('custom-size', 232, 250, true);
+add_image_size('custom-size', 232, 250, true);
+
 
