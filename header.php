@@ -22,7 +22,7 @@
                         endif; ?>
 
         </div>
-    
+       
 </section>
 
     <header class="header-perso">
@@ -34,24 +34,16 @@
         </div>
        
 
-    </header> 
-    
-    <div class="extra-header">
+    </header>  
 
-<div class="recherche">
-        <?php get_search_form(); ?>
-</div>
 
-</div>
+
+
+
 
 <div class="menu-header">
-<?php get_template_part( 'custom-search' ); ?>
              <?php wp_nav_menu( array( 'theme_location' => 'main' ) ); ?> 
 </div> 
-
-
-
-
     
  
 

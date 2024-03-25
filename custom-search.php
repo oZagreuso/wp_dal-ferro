@@ -2,14 +2,13 @@
 
 /**
  * Template Name: Custom Search Page
- *
- * This template can be used to create a custom search page for your WordPress site.
+
  */
 
 get_header(); ?>
 
-<div id="search" class="search-container">
-    <main id="main-search" class="main-search" role="main">
+<div id="recherche">
+    <main id="main-recherche" role="main">
 
         <?php if ( have_posts() ) : ?>
             
